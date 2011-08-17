@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A Canvas Page</title>
+  </head>
+  <body>
+    <a href="index.html">
+      <p>go back to main page</p>
+    </a>
+    <canvas id="my-first-canvas" width="360" height="200">
+    <!--<canvas id="my-first-canvas" style="width: 360px; height: 200px;">-->
+      Here's some text for browsers that don't supprt canvas.
+    </canvas>
+    <br>
+    <img id="my-image">
+    <script>
+      var canvas = document.getElementById('my-first-canvas');
+      var context = canvas.getContext('2d');
+      context.strokeStyle = "#990000";
+      context.strokeRect(20,30,100,50);
+      var myImage = document.getElementById("my-image");
+      myImage.src =canvas.toDataURL();
+    </script>
+  </body>
+</html>
