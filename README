@@ -1,0 +1,32 @@
+HTML5 Test Area
+
+This is a project to try out features of HTML5.
+
+For the most part, each feature has its own page. Load the index.html file and follow the links to the various pages.
+
+
+index.html
+
+Contains links to other pages.
+
+Demonstrates embedding multiple tags within a link anchor.
+
+
+another.html
+
+Just another HTML page to server as a target for the link demonstration in index.html.
+
+
+canvas.html
+
+Demonstrates a couple of features of the HTML5 canvas.
+
+
+audio.html
+
+Demonstrates the audio tag.
+
+
+
+
+
