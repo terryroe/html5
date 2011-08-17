@@ -16,10 +16,17 @@
     <script>
       var canvas = document.getElementById('my-first-canvas');
       var context = canvas.getContext('2d');
+      <!--context.rotate(5 * Math.PI / 180);-->
+      context.rotate(-0.5);
       context.strokeStyle = "#990000";
+      context.fillStyle = "#000099";
+      context.lineWidth = 5;
+      context.lineCap = "round";
+      context.lineJoin = "round";
       context.strokeRect(20,30,100,50);
+      <!--context.fillRect(20,30,100,50);-->
       var myImage = document.getElementById("my-image");
-      myImage.src =canvas.toDataURL();
+      myImage.src = canvas.toDataURL();
     </script>
   </body>
 </html>
