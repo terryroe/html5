@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mondernizr Test Page</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="js/modernizr-latest.js"></script>
+    <script>
+      $(function() {
+        $('#canvas').html('Canvas ' + (Modernizr.canvas ? 'supported!' : 'not supported. :('));
+        $('#canvastext').html('Canvas Text ' + (Modernizr.canvastext ? 'supported!' : 'not supported. :('));
+        $('#video').html('Video ' + (Modernizr.video ? 'supported!' : 'not supported. :('));
+        $('#audio').html('Audio ' + (Modernizr.audio ? 'supported!' : 'not supported. :('));
+        $('#localstorage').html('Local Storage ' + (Modernizr.localstorage ? 'supported!' : 'not supported. :('));
+        $('#webworkers').html('Web Workers ' + (Modernizr.webworkers ? 'supported!' : 'not supported. :('));
+        $('#applicationcache').html('Application Cache ' + (Modernizr.applicationcache ? 'supported!' : 'not supported. :('));
+        $('#geolocation').html('Geolocation ' + (Modernizr.geolocation ? 'supported!' : 'not supported. :('));
+
+        $('#placeholder').html('Placeholder ' + (Modernizr.input.placeholder ? 'supported!' : 'not supported. :('));
+        $('#autofocus').html('Autofocus ' + (Modernizr.input.autofocus ? 'supported!' : 'not supported. :('));
+      });
+    </script>
+  </head>
+  <body>
+    HTML5 Features
+    <ul>
+      <li id="canvas"></li>
+      <li id="canvastext"></li>
+      <li id="video"></li>
+      <li id="audio"></li>
+      <li id="localstorage"></li>
+      <li id="webworkers"></li>
+      <li id="applicationcache"></li>
+      <li id="geolocation"></li>
+    </ul>
+
+    HTML5 Input Features
+    <ul>
+      <li id="placeholder"></li>
+      <li id="autofocus"></li>
+    </ul>
+  </body>
+</html>
+
